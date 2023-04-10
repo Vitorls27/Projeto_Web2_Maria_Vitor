@@ -16,10 +16,16 @@ class Util{
   }
   static function verificar(){
     session_start();
-    if($_SESSION['login'] == null){
+    if (isset($_SESSION['login'])) {
+      if($_SESSION['login'] == null){
+        session_destroy();
+        header("Location: login.php");
+      }
+    } else {
       session_destroy();
       header("Location: login.php");
     }
+    
   }
 
   static function logoff(){

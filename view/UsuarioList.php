@@ -36,7 +36,7 @@ Util::verificar();
           <select name="campo">
         <option value="nome">Nome</option>
         <option value="telefone">Telefone</option>
-        <option value="email">CPF</option>
+        <option value="cpf">CPF</option>
 
       </select>
 </div>
